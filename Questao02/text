@@ -1,0 +1,7 @@
+Um cliente relata que está enfrentando lentidão em um determinado recurso do sistema. Como você abordaria esse problema para identificar a causa raiz e propor uma solução?
+
+Primeiro: é necessário a compreensão detalhada do problema. Coletando informações específicas do problema.
+Segundo: Coletar dados, como por exemplo: Logs, tempo de resposta, consumo de recursos como CPU, memória e disco.
+Terceiro: eu analisaria o código-fonte relacionado ao recurso afetado. Poderia haver ineficiências no código, laços desnecessários ou consultas de banco de dados complexas que precisam ser otimizadas.
+Quarto: Monitoramento em tempo real, observando padrões de uso e identificando picos de carga que possam estar causando a lentidão.
+Quinto:Após implementar as soluções, eu testaria novamente o recurso em um ambiente de desenvolvimento ou teste para verificar se as alterações tiveram um impacto positivo no desempenho. Seria importante coletar novos dados para comparar o antes e o depois. 

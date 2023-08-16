@@ -1,0 +1,5 @@
+Descreva como você lidaria com uma situação em que um usuário encontra um erro desconhecido.
+
+Quando vejo um erro desconhecido, primeiro olho para os registros para entender quando e onde aconteceu. Depois, analiso o código com ferramentas especiais para encontrar pistas sobre o que está errado.
+Se o erro continua confuso, procuro ajuda em comunidades de desenvolvedores online para ver se alguém já teve um problema parecido, quando tenho algumas ideias sobre o que pode estar causando o erro, faço testes controlados no código para confirmar minhas suposições.
+Lidar com erros é normal na programação, e resolver problemas com paciência e colaboração geralmente leva a boas soluções.
