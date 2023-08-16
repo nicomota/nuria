@@ -1,0 +1,8 @@
+Um usuário informa que está recebendo uma mensagem de erro ao tentar realizar uma operação específica no sistema. Explique como você investigaria esse problema e quais etapas seguiria para solucioná-lo.
+
+- Entraria em contato com o usuário para obter mais informações sobre o erro.
+- Tentaria reproduzir o erro em um ambiente de desenvolvimento ou teste, para assim eu possa entender  exatamente em que ponto ele está ocorre.
+- Analisaria a mensagem de erro
+- Analisaria o código relacionado à operação que está causando o erro.
+- Com base na análise, implementaria uma solução para corrigir o erro. 
+- 

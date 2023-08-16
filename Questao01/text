@@ -1,0 +1,39 @@
+Pacientes
+id_paciente 
+nome_paciente 
+tel_paciente 
+email_paciente 
+status_paciente 
+data_nascimento 
+
+Atendimento
+id_atendimento 
+id_paciente 
+data_atendimento 
+hr_atendimento 
+nome_unidade 
+endereco_unidade 
+cd_especialidade
+
+Prontuário
+id_prontuario
+id_paciente
+id_atendimento
+descricao_prontuario
+
+a) Escreva uma consulta SQL que retorne todos os atendimentos do paciente com a especialidade "Neurologia" nos últimos 6 meses.
+SELECT atendimento.*
+FROM pacientes
+JOIN atendimento ON pacientes.id_paciente = atendimento.id_paciente
+JOIN prontuário ON atendimento.id_atendimento = prontuário.id_atendimento
+WHERE pacientes.cd_especialidade = 'Neurologia'
+AND atendimento.data_atendimento >= DATE_ADD(NOW(), INTERVAL -6 MONTH);
+
+b) Suponha que você precise obter todos os prontuários associados ao paciente de ID 123, incluindo os detalhes do atendimento relacionado a cada prontuário. A consulta deve retornar o nome do paciente, a descrição do prontuário e a data do atendimento correspondente.
+SELECT pacientes.nome_paciente, prontuário.descricao_prontuario, atendimento.data_atendimento
+FROM pacientes
+JOIN atendimento ON pacientes.id_paciente = atendimento.id_paciente
+JOIN prontuário ON atendimento.id_atendimento = prontuário.id_atendimento
+WHERE pacientes.id_paciente = 123;
+
+
